@@ -7,6 +7,11 @@ spring:
       label: master #分支
       profile: dev #配置名称后缀
       name: config #配置名称
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
 eureka:
   client:
     service-url:
