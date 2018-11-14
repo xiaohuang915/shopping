@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: shopping-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/xiaohuang915/shopping
+          search-paths: configuration
+      label: master
+server:
+  port: 9006
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9001/eureka/

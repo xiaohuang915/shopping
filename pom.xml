@@ -13,6 +13,7 @@
         <module>order-consumer</module>
         <module>order-zuul</module>
         <module>order-service-double</module>
+        <module>shopping-config</module>
     </modules>
     <packaging>pom</packaging>
     <parent>

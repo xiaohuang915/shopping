@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        serviceId: shopping-config
+      label: master
+      profile: dev
+      name: config
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9001/eureka/
