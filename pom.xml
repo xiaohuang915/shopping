@@ -10,6 +10,9 @@
     <modules>
         <module>register</module>
         <module>order-service</module>
+        <module>order-consumer</module>
+        <module>order-zuul</module>
+        <module>order-service-double</module>
     </modules>
     <packaging>pom</packaging>
     <parent>

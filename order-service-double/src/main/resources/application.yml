@@ -2,7 +2,7 @@ spring:
   application:
     name: order-service
 server:
-  port: 9002
+  port: 9005
 eureka:
   client:
     service-url:

@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: order-zuul
+server:
+  port: 9004
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9001/eureka/
+zuul:
+  routes:
+    order:
+      path: /order/**
+      serviceId: order-service
+    consumer:
+      path: /consumer/**
+      serviceId: consumer-feign
+order-service:
+  ribbon:
+    listOfServices: http://localhost:9002,http://localhost:9005
