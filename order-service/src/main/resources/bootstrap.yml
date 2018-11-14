@@ -2,11 +2,11 @@ spring:
   cloud:
     config:
       discovery:
-        enabled: true
-        serviceId: shopping-config
-      label: master
-      profile: dev
-      name: config
+        enabled: true #开启服务发现
+        serviceId: shopping-config #配置中心服务名称
+      label: master #分支
+      profile: dev #配置名称后缀
+      name: config #配置名称
 eureka:
   client:
     service-url:

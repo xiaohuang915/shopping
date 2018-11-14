@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 /**
  * @Auther: pc.huang
  * @Date: 2018/11/14 11:57
- * @Description:
+ * @Description: 服务调用
  */
 @FeignClient(name = "order-service",fallback = ConsumerFallback.class)
 public interface ConsumerService {

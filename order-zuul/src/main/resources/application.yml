@@ -10,11 +10,11 @@ eureka:
 zuul:
   routes:
     order:
-      path: /order/**
-      serviceId: order-service
+      path: /order/**  #配置前缀
+      serviceId: order-service #转发的服务名称
     consumer:
       path: /consumer/**
       serviceId: consumer-feign
-order-service:
+order-service: #负载均衡
   ribbon:
     listOfServices: http://localhost:9002,http://localhost:9005
