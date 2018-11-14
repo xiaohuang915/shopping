@@ -1,6 +1,17 @@
 spring:
   application:
     name: order-service
+  rabbitmq:
+         host: 172.31.101.49
+         port: 5672
+         username: admin
+         password: admin
+         virtual-host: /
+  cloud:
+    bus:
+      enabled: true
+      trace:
+        enabled: true
 server:
   port: 9002
 
