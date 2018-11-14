@@ -7,11 +7,11 @@ spring:
          username: admin
          password: admin
          virtual-host: /
-  cloud:
-    bus:
-      enabled: true
-      trace:
-        enabled: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
 server:
   port: 9002
 
