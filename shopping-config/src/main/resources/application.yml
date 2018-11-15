@@ -8,6 +8,12 @@ spring:
           uri: https://github.com/xiaohuang915/shopping #配置文件地址
           search-paths: configuration #文件目录
       label: master #分支
+  rabbitmq:
+           host: 172.31.101.49
+           port: 5672
+           username: admin
+           password: admin
+           virtual-host: /
 server:
   port: 9006
 eureka:
