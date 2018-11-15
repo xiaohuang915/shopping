@@ -14,7 +14,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @SpringBootApplication
 @EnableEurekaClient
 @EnableFeignClients
-@EnableCircuitBreaker
+@EnableCircuitBreaker //开启断路器注解
 public class ConsumerApplication {
     public static void main(String[] args){
         SpringApplication.run(ConsumerApplication.class,args);
