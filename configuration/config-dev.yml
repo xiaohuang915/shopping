@@ -1,8 +1,1 @@
 test: 设置配置文件
-spring:
-  rabbitmq:
-    host: 172.31.101.49
-    port: 5672
-    username: admin
-    password: admin
-    virtual-host: /
