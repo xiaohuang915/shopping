@@ -1,9 +1,11 @@
 spring:
   application:
     name: order-service
+  rabbitmq:
+           host: 172.31.101.49
+           port: 5672
+           username: admin
+           password: admin
+           virtual-host: /
 server:
   port: 9005
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:9001/eureka/

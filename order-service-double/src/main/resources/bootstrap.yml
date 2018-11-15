@@ -1,0 +1,18 @@
+spring:
+  cloud:
+    config:
+      discovery:
+        enabled: true #开启服务发现
+        serviceId: shopping-config #配置中心服务名称
+      label: master #分支
+      profile: dev #配置名称后缀
+      name: config #配置名称
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9001/eureka/
