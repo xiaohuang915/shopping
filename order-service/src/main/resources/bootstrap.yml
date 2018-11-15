@@ -7,6 +7,7 @@ spring:
       label: master #分支
       profile: dev #配置名称后缀
       name: config #配置名称
+#2.0配置关闭权限
 management:
   endpoints:
     web:
